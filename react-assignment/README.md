@@ -1,70 +1,84 @@
-# Getting Started with Create React App
+# React.js Fundamentals Assignment
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+This project is a React.js assignment where we practice creating components, managing state, handling events, and using Tailwind CSS for styling.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- **Header Component:** Displays a title "React Assignment".
+- **Profile Component:** Accepts `name` and `email` as props and displays them.
+- **Counter Component:** A stateful component that tracks and increments a counter value.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Tech Stack
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **React**: A JavaScript library for building user interfaces.
+- **Tailwind CSS**: A utility-first CSS framework for creating responsive designs.
+  
+## Setup Instructions
 
-### `npm test`
+### 1. Clone the Repository
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Clone the repository to your local machine using:
 
-### `npm run build`
+```bash
+git clone <repository_url>
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 2. Install Dependencies
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Navigate to the project folder and install the required dependencies:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+cd react-assignment
+npm install
+```
 
-### `npm run eject`
+### 3. Run the Development Server
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Start the development server:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+npm start
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+This will open the application in your default browser at `http://localhost:3000`.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### 4. Open the Application
 
-## Learn More
+You should now be able to view the app, which includes:
+- The **Header** component displaying the title.
+- The **Profile** component displaying the name and email.
+- The **Counter** component where you can increment the counter.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Folder Structure
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```
+react-assignment/
+│-- public/
+│-- src/
+│    ├── components/
+│    │    ├── Header.js
+│    │    ├── Profile.js
+│    │    └── Counter.js
+│    ├── App.js
+│    ├── index.js
+│    ├── index.css
+│-- package.json
+│-- tailwind.config.js
+│-- postcss.config.js
+│-- README.md
+```
 
-### Code Splitting
+## Tech Details
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### React Components
 
-### Analyzing the Bundle Size
+- **Header.js**: Displays a title using Tailwind CSS.
+- **Profile.js**: Displays user profile information using props.
+- **Counter.js**: Displays and increments a counter using React's `useState` hook.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Tailwind CSS
 
-### Making a Progressive Web App
+The application is styled using Tailwind CSS, which is configured for use with React through the `tailwind.config.js` and `postcss.config.js` files.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
